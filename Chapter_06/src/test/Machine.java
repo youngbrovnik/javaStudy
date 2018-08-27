@@ -19,3 +19,6 @@ public class Machine {
         System.out.println("Machine, move(), km = " + mKm);
     }
 }
+
+
+// public protected private

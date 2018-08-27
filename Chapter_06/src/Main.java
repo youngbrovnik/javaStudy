@@ -1,6 +1,4 @@
-import test.Car;
-import test.Machine;
-import test.Ship;
+import test.*;
 
 public class Main {
 
@@ -39,7 +37,43 @@ public class Main {
         Ship izis = new Ship();
         izis.mKm = 200;
         izis.move();
+
+        int tires = Car.NumOfTires;
+        Car.getCarClassName();
+
+//        Animal animal = new Animal();
+        Animal.getInstance().run();
+        Animal.getInstance().move();
+
+        Animal.move();
+
+        Animal a1 = Animal.getInstance();
+        Animal a2 = Animal.getInstance();
+
+        Phone p1 = new Phone("p1");
+        Phone p2 = new Phone("p2");
+
+        System.out.println("p1 = " + p1.mName + ", p2 = " + p2.mName);
+        System.out.println("Static, p1 = " + p1.getStaticName() + ", p2 = " + p2.getStaticName() + ", Phone = " + Phone.sName);
+
+
+//        Object object = new Machine();
+//        Object object2 = new Animal();
+
+        double result1 = 10 * 10 * Calculator.pi;
+        int result2 = Calculator.plus(10, 5);
+        int result3 = Calculator.minus(10, 5);
+
+        System.out.println("result1: " + result1);
+        System.out.println("result2: " + result2);
+        System.out.println("result3: " + result3);
+
+        System.out.println(Television.info);
+
     }
 
+//    private void test(Object obj) {
+//
+//    }
 
 }
