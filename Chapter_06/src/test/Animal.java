@@ -1,25 +1,33 @@
 package test;
 
-public class Animal {
+public abstract class Animal {
 
-    public String mName;
+//    public String mName;
+//
+//    private Animal() { }
+//
+//
+//    private static final Animal SINGLETON = new Animal();
+//
+//    public static Animal getInstance() {
+//        return SINGLETON;
+//    }
+//
+//    public void run() {
+//
+//    }
+//
+//    public static void move() {
+//
+//    }
 
-    private Animal() { }
+    public int mAge;
 
-
-    private static final Animal SINGLETON = new Animal();
-
-    public static Animal getInstance() {
-        return SINGLETON;
+    public void breathe() {
+        // TODO...
     }
 
-    public void run() {
-
-    }
-
-    public static void move() {
-
-    }
+    public abstract void move();
 
 
 }

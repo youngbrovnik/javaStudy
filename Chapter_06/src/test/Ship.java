@@ -6,4 +6,8 @@ public class Ship extends Machine {
     public void move() {
         System.out.println("Ship, move(), km = " + mKm);
     }
+
+    public void run() {
+
+    }
 }
