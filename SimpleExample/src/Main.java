@@ -1,11 +1,22 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        PrintStar pr = new PrintStar(9);
+        int starCount, gugudanCount;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("please insert stars count : ");
+        starCount = scan.nextInt();
+
+        PrintStar pr = new PrintStar(starCount);
         pr.printStar();
 
-        Gugudan gugu = new Gugudan(9);
+        System.out.print("please insert dan : ");
+        gugudanCount = scan.nextInt();
+
+        Gugudan gugu = new Gugudan(gugudanCount);
         gugu.printGugudan();
     }
 }

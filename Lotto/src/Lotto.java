@@ -5,10 +5,6 @@ public class Lotto {
     int nNum;
     int lottoNumbers[] = {0,0,0,0,0,0};
 
-    Lotto() {
-
-    }
-
     int generateLottoNum() {
         int num = (int) (Math.random() * 45) + 1;
 
