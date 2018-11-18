@@ -1,18 +1,89 @@
 import test.*;
 import test.ch8.*;
+import test.ch9.ClassName;
+import test.ch9.View;
 import test.person.Person;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
 //        System.out.println("Hello Class!");
-        PrintExample();
+//        AccountExample();
+//        ShopServiceExample();
+//        PrintExample();
 //        MemberService();
 //        examTest();
 //        testCh8();
 //        testCh7();
 //        testMachine();
+//        testView();
+
+    }
+
+    public static void testNestedClass() {
+        ClassName cn = new ClassName();
+        cn.mIndex = 10;
+
+
+         cn.new NestedClassName().test();
+//         ClassName.new NestedClassName().test();
+         ClassName.X.test();
+
+//        ClassName.NestedClassName xx = new ClassName.NestedClassName();
+//        (() -> new ClassName().NestedClassName())
+
+//        ClassName.NestedClassName nc = ClassName.NestedClassName();
+//        cn.NestedClassName
+
+//        int x = ClassName.NestedClassName.mInt;
+//        int y = ClassName.NestedStaticClassName.mInt;
+    }
+
+
+
+    public static void testView() {
+        View v = new View();
+//        while () {
+//            v.isClicked()
+//        }
+
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick() {
+
+            }
+        });
+
+//        View.OnClickListener
+    }
+
+    public static void AccountExample() {
+        Account2 account = new Account2();
+
+        account.setBalance(10000);
+        System.out.println("현재 잔고 : " + account.getBalance());
+
+        account.setBalance(-100);
+        System.out.println("현재 잔고 : " + account.getBalance());
+
+        account.setBalance(2000000);
+        System.out.println("현재 잔고 : " + account.getBalance());
+
+        account.setBalance(300000);
+        System.out.println("현재 잔고 : " + account.getBalance());
+    }
+
+    public static void ShopServiceExample() {
+        ShopService obj1 = ShopService.getInstance();
+        ShopService obj2 = ShopService.getInstance();
+
+        if(obj1 == obj2) {
+            System.out.println("같은 ShopService 객체 입니다.");
+        } else {
+            System.out.println("다른 ShopService 객체 입니다.");
+        }
 
     }
 
