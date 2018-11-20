@@ -25,11 +25,15 @@ public class Lotto {
         Arrays.sort(lottoNumbers);
     }
 
+//    같은 수가 계속 나오면 어떻게 될까??
+
     void printLottoNum() {
-        manageLottoNum();
-        for(int i=0; i<6; i++) {
-            System.out.print(lottoNumbers[i]+" ");
+        for(int j=0; j<5; j++){
+            manageLottoNum();
+            for(int i=0; i<6; i++) {
+                System.out.print(lottoNumbers[i]+" ");
+            }
+            System.out.println();
         }
-        System.out.println();
     }
 }
