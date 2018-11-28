@@ -30,8 +30,8 @@ public class Lotto {
     void printLottoNum() {
         for(int j=0; j<5; j++){
             manageLottoNum();
-            for(int i=0; i<6; i++) {
-                System.out.print(lottoNumbers[i]+" ");
+            for(int num : lottoNumbers) {
+                System.out.print(num + " ");
             }
             System.out.println();
         }
